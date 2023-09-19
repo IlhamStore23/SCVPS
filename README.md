@@ -17,7 +17,7 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 # Auto Fix Error SSLH + WS-TLS 443
 * 1 • Jika terjadi error di SSLH dan SSH WS-TLS nya,gunakan script ini untuk memperbaiki nya
 ```html
-cd /usr/bin/ && rm -f sl-fix && wget -O sl-fix "https://raw.githubusercontent.com/Tarap-Kuhing/SCVPS/main/sslh-fix/sl-fix" && chmod +x sl-fix && cd && updatemenu && menu
+cd /usr/bin/ && rm -f sl-fix && wget -O sl-fix "https://raw.githubusercontent.com/IlhamStore23/SCVPS/main/sslh-fix/sl-fix" && chmod +x sl-fix && cd && updatemenu && menu
 ```
 
 # SLDNS
