@@ -25,7 +25,7 @@ fi
 # Mod By Tarap Kuhing
 # ==================================================
 # Link Hosting Kalian
-"https://github.com/Tarap-Kuhing/SCVPS/tree/main/ssh/vpn.sh"
+"https://github.com/IlhamStore23/SCVPS/tree/main/ssh/vpn.sh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
@@ -39,7 +39,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://github.com/Tarap-Kuhing/SCVPS/blob/main/ssh/vpn.zip
+wget https://github.com/IlhamStore23/SCVPS/blob/main/ssh/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
