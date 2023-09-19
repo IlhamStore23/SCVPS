@@ -15,7 +15,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/Tarap-Kuhing/perizinan/main/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/IlhamStore23/perizinan/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -23,11 +23,11 @@ echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Facebook : "
 echo -e "${NC}${LIGHT}WhatsApp : 085754292950"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Hendra2012"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/IlhamStore23"
 exit 0
 fi
 
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/Tarap-Kuhing/SCVPS/main/websocket/ws-dropbear
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/IlhamStore23/SCVPS/main/websocket/ws-dropbear
 chmod +x /usr/local/bin/ws-dropbear
 
 # Installing Service
@@ -55,14 +55,14 @@ systemctl enable ws-dropbear.service
 systemctl start ws-dropbear.service
 systemctl restart ws-dropbear.service
 
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/Tarap-Kuhing/SCVPS/main/websocket/ws-ovpn.py
+wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/IlhamStore23/SCVPS/main/websocket/ws-ovpn.py
 chmod +x /usr/local/bin/ws-ovpn
 
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By TARAP KUHING
-Documentation=https://t.me/Hendra2012
+Description=Python Proxy Mod By Ilham store
+Documentation=https://t.me/IlhamStore23
 After=network.target nss-lookup.target
 
 [Service]
@@ -82,13 +82,13 @@ systemctl daemon-reload
 systemctl enable ws-ovpn
 systemctl restart ws-ovpn
 
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/Tarap-Kuhing/tarap/main/sshws/ws-stunnel
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/IlhamStore23/tarap/main/sshws/ws-stunnel
 chmod +x /usr/local/bin/ws-stunnel
 
 # Installing Service
 cat > /etc/systemd/system/ws-stunnel.service << END
 [Unit]
-Description=Python Proxy Mod By TARAP KUHING
+Description=Python Proxy Mod By Ilham Store
 Documentation=https://t.me/Hendra2012
 After=network.target nss-lookup.target
 
