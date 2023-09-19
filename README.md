@@ -18,3 +18,40 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 * 1 • Jika terjadi error di SSLH dan SSH WS-TLS nya,gunakan script ini untuk memperbaiki nya
 ```html
 cd /usr/bin/ && rm -f sl-fix && wget -O sl-fix "https://raw.githubusercontent.com/Tarap-Kuhing/SCVPS/main/sslh-fix/sl-fix" && chmod +x sl-fix && cd && updatemenu && menu
+```
+
+# SLDNS
+SSH OVER DNS create by Ilham Store
+* Link Script Repo SlowDNS Ilham Store
+```html
+https://github.com/IlhamStore23/SLDNS
+```
+# INFO Khusus SlowDNS
+• SSH Over DNS (SlowDNS)
+* untuk kecepatan nya di batasi
+* speed download 2,2 Mbps (Max Speed)
+* speed upload 100+ Mbps (Max Speed)
+* Support semua port ssh
+
+# SSH Only (Support All SSH Ports)
+* Service Port DNS
+
+# SERVER PORT:
+* UDP SERVER 53,5300
+
+# CLIENT PORT:
+* UDP DNS 3369,2269
+* DoT 169
+* DoH 99
+* SSH ALL PORT
+
+# Support DNS Protokol
+* UDP DNS
+* DNS-over-TLS (DoT) (OFFLINE)
+* DNS-over-HTTPS (DoH) (OFFLINE)
+#
+* SCRIPT SLOWDNS
+* script slowdns
+* Script Slowdns
+* Script SlowDNS
+* Script SSH Over DNS
